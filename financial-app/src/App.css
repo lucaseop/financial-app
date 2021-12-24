@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100&display=swap');
-
 .App {
   text-align: center;
 }
@@ -37,18 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-#botao{
-  position: absolute;
-  font-family: Inter;
-  font-size: 16px;
-  line-height: 24px;
-  background: #05CBE7;
-  border-radius: 28px;
-  color: white;
-  width: 295px;
-  height: 56px;
-  /* left: 40px;
-  top: 573px; */
 }
