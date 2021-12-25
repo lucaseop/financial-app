@@ -8,6 +8,8 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: lightgray;
+    
 ` 
 
 const Form = styled.form`
@@ -15,6 +17,7 @@ const Form = styled.form`
     flex-direction: column;
     max-width: 295px;
     gap: 20px;
+   
 `
 const Title = styled.span`
 font-family: Inter;
