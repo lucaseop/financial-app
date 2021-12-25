@@ -1,7 +1,10 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
+import { Button } from '.'
+interface ButtonStyledProps {
+    isDisabled?: boolean
+}
 
-const ButtonStyled = styled.button `
-    width: 295px;
+const ButtonStyled = styled.button<ButtonStyledProps>`
     height: 56px;
     background: #05CBE7;
     border-radius: 28px;
@@ -9,7 +12,37 @@ const ButtonStyled = styled.button `
     font-family: Inter;
     font-size: 16px;
     line-height: 24px;
+    border: 1px;
+    border-color: #05CBE7;
+    &:hover{
+        background: red;
+    }
+    cursor:pointer;
+    ${props=>props.isDisabled && css`cursor:not-allowed`}
+`
+const LoadingSpin = styled.div`
+    border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  width: 20.93px;
+  height: 24px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  @-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 `
 
-export {ButtonStyled}
+const LoadingContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100% ;
+`
+
+export {ButtonStyled, LoadingSpin, LoadingContainer}
