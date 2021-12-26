@@ -13,9 +13,10 @@ const InputStyled = styled.input`
   margin: 10px 28px 14px 0;
   border: 0;
   padding: 0;
-  background-color: hsl(225, 29%, 56%, 0.05);
-  color: #6F7FAF;
+  color: #6f7faf;
   font-family: Inter;
+  background: none;
+  outline: none; /* tirar borda do input*/
 `
 
 const IconContainer = styled.div`

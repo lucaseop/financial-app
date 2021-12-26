@@ -10,7 +10,7 @@ const PageLogin = () => {
       <Form>
         <Title>Sign in to Splash.</Title>
         <hr />
-        <Input Icon={() => <Phone />} />
+        <Input Icon={() => <Phone color="#6F7FAF" />} />
         <Button text="Sign in"></Button>
       </Form>
     </Container>
