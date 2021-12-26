@@ -8,7 +8,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: lightgray; */
 `
 
 const Form = styled.form`
@@ -16,7 +15,6 @@ const Form = styled.form`
   flex-direction: column;
   min-width: 295px;
   gap: 20px;
-  margin-bottom: 40px;
 `
 const Title = styled.span`
   font-family: Inter;
@@ -35,8 +33,8 @@ const TittleLine = styled.div`
 `
 
 const Logo = styled(LogoApp)`
-  margin-bottom: 22px;
   text-align: left;
+  /* margin-top: 102px; */
 `
 
 const ContainerTitle = styled.div`
@@ -58,8 +56,7 @@ text-align: center;
 vertical-align: Top;
 letter-spacing: 0.2px;
 color: #6F7FAF;
-margin-top: 114px;
-
+margin-top: 34px;
 `
 
 const Link = styled.a`

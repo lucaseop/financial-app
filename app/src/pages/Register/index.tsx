@@ -13,27 +13,29 @@ import {
   Link
 } from './style'
 
-const PageLogin = () => {
+const PageRegister = () => {
   return (
     <Container>
       <ContainerTitle>
         <Logo />
         <Title>
-          Financial App
+          Create a new account
           <TittleLine />
         </Title>
       </ContainerTitle>
 
       <Form>
+        <Input placeholder="Full name..." Icon={() => <Phone />} />
+        <Input placeholder="Your country..." Icon={() => <IconColor />} />
         <Input placeholder="Phone number..." Icon={() => <Phone />} />
         <Input placeholder="Password..." Icon={() => <IconColor />} />
-        <Button text="Sign in"></Button>
+        <Button text="Create Account"></Button>
         <Fotter>
-          Don’t have an account? <Link href=''>Register</Link>
+        Already have an account?  <Link href=''>Sign in</Link>
         </Fotter>
       </Form>
     </Container>
   )
 }
 
-export default PageLogin
+export default PageRegister

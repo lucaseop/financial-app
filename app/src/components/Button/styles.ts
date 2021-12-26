@@ -23,7 +23,7 @@ const ButtonStyled = styled.button<ButtonStyledProps>`
     css`
       cursor: not-allowed;
     `}
-    margin-top: 50px;
+    // margin-top: 50px;
 `
 const LoadingSpin = styled.div`
   border: 3px solid #f3f3f3;
