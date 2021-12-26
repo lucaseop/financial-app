@@ -42,11 +42,4 @@ const PageRegister = () => {
   )
 }
 
-;<datalist id="paises">
-  {' '}
-  <option>Red</option> <option>Yellow</option> <option>Blue</option>{' '}
-  <option>Green</option> <option>Orange</option> <option>Purple</option>{' '}
-  <option>Black</option> <option>White</option> <option>Gray</option>{' '}
-</datalist>
-
 export default PageRegister
