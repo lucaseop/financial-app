@@ -17,6 +17,24 @@ const InputStyled = styled.input`
   font-family: Inter;
   background: none;
   outline: none; /* tirar borda do input*/
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(225, 29%, 56%, 0.8);
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: hsl(225, 29%, 56%, 0.8);
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: hsl(225, 29%, 56%, 0.8);
+  }
 `
 
 const IconContainer = styled.div`

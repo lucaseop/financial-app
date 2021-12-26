@@ -1,17 +1,18 @@
+import { HTMLAttributes } from 'react'
 import { Container, IconContainer, InputStyled } from './style'
 
-interface InputProps {
+interface InputProps extends HTMLAttributes<HTMLInputElement>{
   //   text: string
   Icon: () => JSX.Element
 }
 
-export const Input = ({ Icon }: InputProps) => {
+export const Input = ({ Icon, ...rest }: InputProps) => {
   return (
     <Container>
       <IconContainer>
         <Icon />
       </IconContainer>
-      <InputStyled />
+      <InputStyled {...rest}/>
     </Container>
   )
 }
