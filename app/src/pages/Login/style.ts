@@ -14,7 +14,7 @@ const Container = styled.div`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  max-width: 295px;
+  min-width: 295px;
   gap: 20px;
 `
 const Title = styled.span`
@@ -39,9 +39,33 @@ const Logo = styled(LogoApp)`
 `
 
 const ContainerTitle = styled.div`
-  position: relative;
-  width: 32px;
-  text-align: left;
+  min-width: 295px;
+  /* align-itens: left; */
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 `
 
-export { Container, Form, Title, TittleLine, Logo, ContainerTitle }
+const Fotter = styled.div`
+
+font-family: Inter;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+line-height: 118%;
+text-align: center;
+vertical-align: Top;
+letter-spacing: 0.2px;
+color: #6F7FAF;
+margin-top: 114px;
+
+`
+
+const Link = styled.a`
+  color: #3623B7;
+`
+
+
+
+
+export { Container, Form, Title, TittleLine, Logo, ContainerTitle, Fotter, Link }
