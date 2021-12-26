@@ -1,4 +1,7 @@
 import { Button } from '../../components/Button'
+import { Input } from '../../components/Input'
+import IconColor from '../../icons/IconColor'
+import Phone from '../../icons/Phone'
 import { Container, Form, Title } from './style'
 
 const PageLogin = () => {
@@ -7,9 +10,9 @@ const PageLogin = () => {
       <Form>
         <Title>Sign in to Splash.</Title>
         <hr />
+        <Input Icon={() => <Phone />} />
+        <Input Icon={() => <IconColor />} />
 
-        <input type="text" />
-        <input type="text" />
         <Button text="Sign in"></Button>
       </Form>
     </Container>
