@@ -11,8 +11,6 @@ const PageLogin = () => {
         <Title>Sign in to Splash.</Title>
         <hr />
         <Input Icon={() => <Phone />} />
-        <Input Icon={() => <IconColor />} />
-
         <Button text="Sign in"></Button>
       </Form>
     </Container>
