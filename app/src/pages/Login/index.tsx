@@ -29,7 +29,7 @@ const PageLogin = () => {
         <Input placeholder="Password..." Icon={() => <IconColor />} />
         <Button text="Sign in"></Button>
         <Fotter>
-          Don’t have an account? <Link href=''>Register</Link>
+          Don’t have an account? <Link href='../Register/index.tsx'>Register</Link>
         </Fotter>
       </Form>
     </Container>

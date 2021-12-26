@@ -16,3 +16,15 @@ export const Input = ({ Icon, ...rest }: InputProps) => {
     </Container>
   )
 }
+
+export const InputList = ({Icon, ...rest}: InputProps) => {
+  return(
+    <Container>
+      <IconContainer>
+        <Icon />
+      </IconContainer>
+      <InputStyled {...rest}/>
+    </Container>
+
+  )
+}
