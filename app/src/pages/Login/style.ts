@@ -1,3 +1,4 @@
+import { Link as LinkRouter } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoApp from '../../icons/Logo'
 
@@ -62,7 +63,7 @@ margin-top: 114px;
 
 `
 
-const Link = styled.a`
+const Link = styled(LinkRouter)`
   color: #3623B7;
   text-decoration: none;
 `

@@ -14,6 +14,7 @@ import {
   Link
 } from './style'
 import { ChangeEvent, useState } from 'react'
+import { EnumRoutes } from '../../route/types'
 
 const PageLogin = () => {
   const [state, setState] = useState({ phone: '', pass: '' })
@@ -70,7 +71,7 @@ const PageLogin = () => {
         <Button text="Sign in" loading={load}></Button>
         <Fotter>
           Don’t have an account?{' '}
-          <Link href="../Register/index.tsx">Register</Link>
+          <Link to={EnumRoutes.register}>Register</Link>
         </Fotter>
       </Form>
     </Container>

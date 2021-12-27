@@ -10,9 +10,6 @@ const AppRoutes = () => {
       <Route path={EnumRoutes.login} element={<PageLogin />} />
       <Route path={EnumRoutes.register} element={<PageRegister />} />
       <Route path="*" element={<Page404 />} />
-      {/* <Route path="*">
-        <Page404 />
-      </Route> */}
     </Routes>
   )
 }

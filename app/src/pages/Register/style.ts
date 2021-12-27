@@ -1,3 +1,4 @@
+import { Link as LinkRouter } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoApp from '../../icons/Logo'
 
@@ -46,25 +47,30 @@ const ContainerTitle = styled.div`
 `
 
 const Fotter = styled.div`
-
-font-family: Inter;
-font-style: Regular;
-font-size: 14px;
-line-height: 20px;
-line-height: 118%;
-text-align: center;
-vertical-align: Top;
-letter-spacing: 0.2px;
-color: #6F7FAF;
-margin-top: 34px;
+  font-family: Inter;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  line-height: 118%;
+  text-align: center;
+  vertical-align: Top;
+  letter-spacing: 0.2px;
+  color: #6f7faf;
+  margin-top: 34px;
 `
 
-const Link = styled.a`
-  color: #3623B7;
+const Link = styled(LinkRouter)`
+  color: #3623b7;
   text-decoration: none;
 `
 
-
-
-
-export { Container, Form, Title, TittleLine, Logo, ContainerTitle, Fotter, Link }
+export {
+  Container,
+  Form,
+  Title,
+  TittleLine,
+  Logo,
+  ContainerTitle,
+  Fotter,
+  Link
+}

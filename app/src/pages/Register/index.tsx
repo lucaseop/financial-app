@@ -15,6 +15,7 @@ import {
   Fotter,
   Link
 } from './style'
+import { EnumRoutes } from '../../route/types'
 
 const PageRegister = () => {
   return (
@@ -35,7 +36,7 @@ const PageRegister = () => {
         <Button text="Create Account"></Button>
         <Fotter>
           Already have an account?{' '}
-          <Link href="../Login/index.tsx">Sign in</Link>
+          <Link to={EnumRoutes.login}>Sign in</Link>
         </Fotter>
       </Form>
     </Container>
