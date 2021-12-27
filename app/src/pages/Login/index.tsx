@@ -17,15 +17,24 @@ import { ChangeEvent, useState } from 'react'
 
 const PageLogin = () => {
   const [state, setState] = useState({ phone: '', pass: '' })
+
+  const [load, setLoad] = useState(false)
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setState(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
+
   const loginUser = (phone: string, pass: string) => {
-    if (phone === '333' && pass === '123') {
-      toast.success('Sucesso !')
-    } else {
-      toast.error('Wow so easy !')
-    }
+    setLoad(true)
+
+    setTimeout(() => {
+      if (phone === '333' && pass === '123') {
+        toast.success('Sucesso !')
+      } else {
+        toast.error('Wow so easy !')
+      }
+      setLoad(false)
+    }, 5000)
   }
 
   return (
@@ -58,7 +67,7 @@ const PageLogin = () => {
           Icon={() => <IconColor />}
           onChange={handleChange}
         />
-        <Button text="Sign in"></Button>
+        <Button text="Sign in" loading={load}></Button>
         <Fotter>
           Don’t have an account?{' '}
           <Link href="../Register/index.tsx">Register</Link>
