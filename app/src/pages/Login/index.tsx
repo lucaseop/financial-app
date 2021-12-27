@@ -13,10 +13,13 @@ import {
   Fotter,
   Link
 } from './style'
-import { useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 
 const PageLogin = () => {
-  const [state, setstate] = useState({phone:"",pass:""})
+  const [state, setState] = useState({ phone: '', pass: '' })
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setState(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  }
   const loginUser = (phone: string, pass: string) => {
     if (phone === '333' && pass === '123') {
       toast.success('Sucesso !')
@@ -35,9 +38,26 @@ const PageLogin = () => {
         </Title>
       </ContainerTitle>
 
-      <Form>
-        <Input placeholder="Phone number..." Icon={() => <Phone />} />
-        <Input placeholder="Password..." Icon={() => <IconColor />} />
+      <Form
+        onSubmit={e => {
+          e.preventDefault()
+          loginUser(state.phone, state.pass)
+        }}
+      >
+        <Input
+          name="phone"
+          value={state.phone}
+          placeholder="Phone number..."
+          Icon={() => <Phone />}
+          onChange={handleChange}
+        />
+        <Input
+          name="pass"
+          value={state.pass}
+          placeholder="Password..."
+          Icon={() => <IconColor />}
+          onChange={handleChange}
+        />
         <Button text="Sign in"></Button>
         <Fotter>
           Don’t have an account?{' '}

@@ -1,7 +1,7 @@
-import { HTMLAttributes } from 'react'
+import { HTMLAttributes, InputHTMLAttributes } from 'react'
 import { Container, IconContainer, InputStyled } from './style'
 
-interface InputProps extends HTMLAttributes<HTMLInputElement>{
+interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
   //   text: string
   Icon: () => JSX.Element
 }
